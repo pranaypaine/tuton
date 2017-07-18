@@ -1,0 +1,11 @@
+device gem:
+	{
+		crate a admin role based system
+		better user management
+	}
+Api:{
+	for mobile apps and angular frontend
+}
+Reddis:{
+	for serving user requets faster
+}

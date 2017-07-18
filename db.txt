@@ -1,0 +1,39 @@
+users:
+{
+	user_id: 'integer'(incremental),
+	first_name: 'string',
+	middle_name: 'string'(optional),
+	last_name: 'string',
+	bio: 'text',
+	dob: 'date',
+	user_email: 'varchar',
+	username: 'varchar',
+	password: 'varchar'(encrypted),
+	role: 'enum'(0=admin, 1=user),
+	created_date: 'datetime',
+	updated_date: 'datetime',
+}
+roles:
+{
+	
+}
+posts:
+{
+	title: 'varchar'(incremental),
+	cover_image: 'varchar'(fileupload),
+	body: 'text',
+	created_by: link user_id,
+	created_on: 'datetime',
+	updated_on: 'datetime',
+}
+@ can be replaced by facebook comments just a thought
+comments:
+{
+	comment_id: 'integer'
+	post_id: post associated
+	parent_id: link comment_id,(null if parent)
+	comment_body: 'text',
+	user_id: link user_id,
+	created_date: 'datetime'
+	updated_date: 'datetime'
+}
