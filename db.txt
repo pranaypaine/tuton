@@ -19,9 +19,11 @@ roles:
 }
 posts:
 {
-	title: 'varchar'(incremental),
-	cover_image: 'varchar'(fileupload),
-	body: 'text',
+	title: varchar
+	cover_image: varchar
+	body: text
+	tags: text
+	category_id: category_id
 	created_by: link user_id,
 	created_on: 'datetime',
 	updated_on: 'datetime',

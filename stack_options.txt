@@ -6,6 +6,6 @@ device gem:
 Api:{
 	for mobile apps and angular frontend
 }
-Reddis:{
+Redis:{
 	for serving user requets faster
 }
